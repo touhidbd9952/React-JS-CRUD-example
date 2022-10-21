@@ -12,15 +12,45 @@ you need npm and Node.js installed
   </head>
   <body>
 
-    <div id="mydiv"></div>
+    <div id="studentaddform"></div>
+
 
     <script type="text/babel">
-      function Hello() {
-        return <h1>Hello World!</h1>;
+      function StudentForm() 
+	  {
+        return (
+		<form>
+     <label>
+	 		Enter your name:<br/>
+        	<input type="text" id="fullname"  value={name} onChange={(e) => setName(e.target.value)} />
+			<br/>
+      </label>
+	  
+	  <label>
+	 		Enter your address:<br/>
+        	<textarea id="address"  value={name} onChange={(e) => setName(e.target.value)} ></textarea>
+			<br/>
+      </label>
+	  
+	  <label>Enter your email:<br/>
+        <input type="text" id="email"  value={name}  onChange={(e) => setName(e.target.value)}/>
+		<br/>
+      </label>
+	  
+	  <label>Enter your phone:<br/>
+        <input type="text" id="phone"  value={name}  onChange={(e) => setName(e.target.value)}/>
+		<br/><br/>
+      </label>
+	  
+	  <input type="submit"  value="Save"/>
+	  
+    </form>
+		  )
       }
 
-      ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+      ReactDOM.render(<StudentForm />, document.getElementById('studentaddform'))
     </script>
+
 
   </body>
 </html>
