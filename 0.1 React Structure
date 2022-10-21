@@ -1,3 +1,8 @@
+////React js///////////////////////////////////////
+React js is a frontend JavaScript framework. It is created by Facebook. React is used for building UI components. 
+React creates a VIRTUAL DOM in memory. React only changes what needs to be changed. To use React in production, 
+you need npm and Node.js installed
+
 <!DOCTYPE html>
 <html>
   <head>
